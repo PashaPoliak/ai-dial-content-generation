@@ -26,6 +26,7 @@ async def _put_image() -> Attachment:
     #    - title=file_name
     #    - url=attachment.get("url")
     #    - type=mime_type_png
+    raise NotImplementedError
 
 
 def start() -> None:
@@ -48,7 +49,7 @@ def start() -> None:
     #        adapts this attachment to Message content in appropriate format for Model.
     #  TRY THIS APPROACH WITH DIFFERENT MODELS!
     #  Optional: Try upload 2+ pictures for analysis
-    pass
+    raise NotImplementedError
 
 
 start()

@@ -46,7 +46,7 @@ async def _save_images(attachments: list[Attachment]):
     #    - with open(filename, 'wb') as f:
     #    - f.write(image_data)
     #  7. Print confirmation: print(f"Image saved: {filename}")
-    pass
+    raise NotImplementedError
 
 
 def start() -> None:
@@ -65,11 +65,11 @@ def start() -> None:
     #    - if custom_content := ai_message.custom_content:
     #    - if attachments := custom_content.attachments:
     #    - asyncio.run(_save_images(attachments))
-    #  5. Optional: try to configure the picture for output via `custom_fields` parameter.
+    #  5. Try to configure the picture for output via `custom_fields` parameter.
     #    - custom_fields={"size": Size.square, "style": Style.vivid, "quality": Quality.hd}
     #    - Documentation: See `custom_fields`. https://dialx.ai/dial_api#operation/sendChatCompletionRequest
     #  6. Optional: Test it with the 'imagegeneration@005' (Google image generation model)
-    pass
+    raise NotImplementedError
 
 
 start()
