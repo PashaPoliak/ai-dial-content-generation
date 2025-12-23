@@ -26,7 +26,19 @@ By completing these tasks, you will learn:
 1. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
+   py -m pip install --upgrade pip
+   py -m pytest ./tests -v > pytest.log 2>&1
+   pytest --tb=no -q
+   source /C/dev/projects/be/AI/ai-dial-content-generation/.venv/Scripts/activate
    ```
+
+1.1 **Install env:**
+   use venv
+   use pytest: (based on TODO) into folder ./test
+   - @pytest.mark.parametrize
+   - importlib.util.spec_from_file_location
+   - exec_module for task
+
 
 2. **Set your API key:**
    - Ensure that you are connected to the EPAM VPN
@@ -50,10 +62,10 @@ By completing these tasks, you will learn:
    ├── image_to_text/
    │   ├── openai/
    │   │   ├── message.py           # ✅ Complete
-   │   │   └── task_openai_itt.py   # 🚧 TODO
-   │   └── task_dial_itt.py         # 🚧 TODO
+   │   │   └── task_openai_itt.py   # ✅ Complete
+   │   └── task_dial_itt.py         # ✅ Complete
    └── text_to_image/
-       └── task_tti.py              # 🚧 TODO
+       └── task_tti.py              # ✅ Complete
    dialx-banner.png                 # 📁 Sample image
    ```
 

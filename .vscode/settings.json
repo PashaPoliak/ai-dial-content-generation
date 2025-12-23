@@ -1,0 +1,47 @@
+{
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python-envs.pythonProjects": [],
+  "chat.agent.codeBlockProgress": false,
+  "chat.agent.enabled": false,
+  "chat.disableAIFeatures": true,
+  "editor.largeFileOptimizations": false,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "pgsql.connections": [
+    {
+      "host": "localhost",
+      "database": "postgres",
+      "user": "postgres",
+      "password": "password",
+      "emptyPasswordInput": false,
+      "port": "5432"
+    }
+  ],
+  "mcp": {
+    "servers": {
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "C:/Users/Public/work/copilot-agent",
+          "C:/Users/Public/work/copilot-agent"
+        ]
+      },
+      "postgres": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-postgres",
+          "postgresql://postgres:trjoshi@localhost:5432/postgres",
+          "--allow-writes"
+        ]
+      }
+    }
+  }
+}
